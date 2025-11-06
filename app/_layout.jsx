@@ -14,7 +14,7 @@ const RootLayout = () => {
                 headerTintColor: theme.iconColor
             }}>
                 <Stack.Screen name="index" options={{ headerShown: false }} />
-                <Stack.Screen name="contact" options={{ title: 'Contact', headerTitleAlign: 'center' }} />
+                <Stack.Screen name="(auth)" options={{ headerShown: false }} />
             </Stack>
         </>
 
@@ -22,5 +22,3 @@ const RootLayout = () => {
 }
 
 export default RootLayout
-
-const styles = StyleSheet.create({})

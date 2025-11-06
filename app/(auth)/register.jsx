@@ -1,21 +1,20 @@
 import { StyleSheet } from 'react-native'
+import ThemedView from '../../component/ThemedView'
+import ThemedText from '../../component/ThemedText'
 import { Link } from 'expo-router'
-import ThemedView from '../component/ThemedView'
-import ThemedText from '../component/ThemedText'
+import Spacer from '../../component/Spacer'
 
-const Contact = () => {
+export default function Register() {
     return (
         <ThemedView style={styles.container}>
-            <ThemedText style={styles.title}>Contact Page</ThemedText>
-
-            <Link href="/" style={{ marginVertical: 20, textDecorationLine: 'underline' }}>
-                <ThemedText>back to Home page</ThemedText>
+            <ThemedText title={true} style={styles.title}>Register Page</ThemedText>
+            <Spacer height={20} />
+            <Link href='/login'>
+                <ThemedText>Go to Login</ThemedText>
             </Link>
         </ThemedView>
     )
 }
-
-export default Contact
 
 const styles = StyleSheet.create({
     container: {

@@ -9,11 +9,12 @@ const Home = () => {
     return (
         <ThemedView style={styles.container}>
             <ThemedLogo />
-            <Spacer />
             <ThemedText style={styles.title} title={true} >The Number 1</ThemedText>
-            <ThemedText style={{ marginVertical: 20 }}>Reading from the list...</ThemedText>
-            <Link href="/contact" style={{ marginVertical: 20 }}>
-                <ThemedText>Go to Contact</ThemedText>
+            <Spacer height={20} />
+            <ThemedText>Reading from the list...</ThemedText>
+            <Spacer />
+            <Link href="/login" >
+                <ThemedText>Go to Login</ThemedText>
             </Link>
         </ThemedView>
 

@@ -1,16 +1,21 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import Logo from '../assets/images/logo.png'
+import { StyleSheet } from 'react-native'
 import { Link } from 'expo-router'
+import ThemedView from '../component/ThemedView'
+import ThemedLogo from '../component/ThemedLogo'
+import Spacer from '../component/Spacer'
+import ThemedText from '../component/ThemedText'
 
 const Home = () => {
     return (
-        <View style={styles.container}>
-            <Image source={Logo} style={{ width: 100, height: 100, marginBottom: 20 }} />
-            <Text style={styles.title}>The Number 1</Text>
-            <Text style={{ marginVertical: 20 }}>Reading from the list...</Text>
-            <Link href="/contact" style={{ marginVertical: 20 }}>Go to Contact</Link>
-        </View>
+        <ThemedView style={styles.container}>
+            <ThemedLogo />
+            <Spacer />
+            <ThemedText style={styles.title} title={true} >The Number 1</ThemedText>
+            <ThemedText style={{ marginVertical: 20 }}>Reading from the list...</ThemedText>
+            <Link href="/contact" style={{ marginVertical: 20 }}>
+                <ThemedText>Go to Contact</ThemedText>
+            </Link>
+        </ThemedView>
 
     )
 }
@@ -20,7 +25,6 @@ export default Home
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
     },

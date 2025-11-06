@@ -5,8 +5,8 @@
     "slug": "Shelfie_App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/logo_light.png",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/white logo.png",
@@ -19,7 +19,7 @@
     "android": {
       "adaptiveIcon": {
         // "foregroundImage": "./assets/images/white logo.png",
-        // "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
     },

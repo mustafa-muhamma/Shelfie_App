@@ -16,6 +16,9 @@ const Home = () => {
             <Link href="/login" >
                 <ThemedText>Go to Login</ThemedText>
             </Link>
+            <Link href="/(dashboard)/profile" >
+                <ThemedText>Go to Profile</ThemedText>
+            </Link>
         </ThemedView>
 
     )
